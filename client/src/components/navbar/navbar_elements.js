@@ -75,7 +75,7 @@ export const NavLinks = styled(LinkScroll)`
  display: flex;
  align-items: center;
  text-decoration: none;
- padding: 0 1 rem;
+ padding: 0 1rem;
  height: 100%;
  cursor: pointer;
 
