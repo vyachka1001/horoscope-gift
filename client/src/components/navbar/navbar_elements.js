@@ -3,7 +3,7 @@ import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
 
 export const Nav = styled.nav` 
-    background: #000;
+    background: ${({ scrollNav}) => (scrollNav ? '#000' : 'transparent')};
     height: 80px;
     margin-top: -80px;
     display:flex;
@@ -80,35 +80,55 @@ export const NavLinks = styled(LinkScroll)`
  cursor: pointer;
 
  &.active{
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #B762C1;
  }
 `
 
 export const NavBtn = styled.nav`
     display: flex; 
     align-items: center;
-    
+    jusify-content: flex-end;
 
     @media screen and (max-width: 768px){
         display: none;
     }
 `
 export const NavBtnLink = styled(LinkR)`
-border-radius: 50px;
-background: #B762C1; 
-white-space: nowrap;
-padding: 10px 22px;
-color: #010606;
-font-size: 16px;
-outline: none;
-border: none;
-cursor: pointer;
-transition: all 0.2s ease-in-out;
-text-decoration: none;
+    border-radius: 50px;
+    background: #B762C1; 
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 19px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
-&:hover{
+
+    &:hover{
     transition: all 0.2s ease-in-out;
     background: #EA99D5;
     color: #010606;
 }
+`
+export const NavBtnLinkSignUp = styled(LinkR)`
+    color: #B762C1; 
+    background: transparent;
+
+    white-space: nowrap;
+    padding: 10px 22px;
+    font-size: 19px;
+    font-weight: bold;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+    transition: all 0.2s ease-in-out;
+    color: #EA99D5;
 `
