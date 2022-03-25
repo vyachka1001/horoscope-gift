@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import {Link as LinkR} from 'react-router-dom'
+import {Link as LinkScroll} from 'react-scroll'
 
 
 export const ZodiacContainer = styled.div`
@@ -38,7 +40,7 @@ export const ZodiacWrapper = styled.div`
 
 `
 
-export const ZodiacCard = styled.div`
+export const ZodiacCard = styled(LinkR)`
     background: #B762C1;
     display: flex; 
     flex-direction: column;
@@ -50,6 +52,7 @@ export const ZodiacCard = styled.div`
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0, 0, 0.2);
     transition: all 0.1s ease-in-out;
+    text-decoration: none;
 
     &:hover {
         background: #EA99D5;

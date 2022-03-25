@@ -33,7 +33,7 @@ return (
       </MobileIcon>
       <NavMenu>
         <NavItem>
-          <NavLinks to= 'zodiac' smooth={true} duration={1500} spy={true} exact='true' offset={-80}>Zodiac</NavLinks>
+          <NavLinks to= 'zodiac' smooth={true} duration={1500} spy={true} exact='true' offset={-80}>Zodiac Signs</NavLinks>
         </NavItem>
         <NavItem>
           <NavLinks to= 'discover'>Discover</NavLinks>
@@ -42,7 +42,7 @@ return (
           <NavLinks to= 'services'>Services</NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks to= 'signup'>Sign Up</NavLinks>
+          <NavLinks to= 'signup'></NavLinks>
         </NavItem>
       </NavMenu>    
       <NavBtn>
