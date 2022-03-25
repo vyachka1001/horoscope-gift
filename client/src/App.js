@@ -36,7 +36,7 @@ function App() {
         <Route path="/capricorn" component={CapricornPage} exact/> 
         <Route path="/aquarius" component={AquariusPage} exact/> 
         <Route path="/pisces" component={PiscesPage} exact/> 
-        <Route path="/zodiac" component={Home} exact/>
+        {/* <Route path="/zodiac" component={Home} exact/> */}
 
       </Switch>
     </Router>

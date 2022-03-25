@@ -9,8 +9,8 @@ const Sidebar = ({isOpen, toggle}) => {
         </Icon>
         <SidebarWrapper>
             <SidebarMenu>
-                <SidebarLink to="about" onClick={toggle}>
-                    About
+                <SidebarLink to="zodiac" onClick={toggle}>
+                    Zodiac Signs
                 </SidebarLink>
                 <SidebarLink to="discover" onClick={toggle}>
                     Discover
@@ -18,12 +18,9 @@ const Sidebar = ({isOpen, toggle}) => {
                 <SidebarLink to="services" onClick={toggle}>
                     Services
                 </SidebarLink>
-                <SidebarLink to="signup" onClick={toggle}>
-                    Sign Up
-                </SidebarLink>
             </SidebarMenu>
             <SideBtnWrap>
-                <SidebarRoute to="/signin">Sign In</SidebarRoute>
+                <SidebarRoute to="/login">Log In</SidebarRoute>
             </SideBtnWrap>
         </SidebarWrapper>
     </SidebarContainer>
