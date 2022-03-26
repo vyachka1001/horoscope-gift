@@ -1,8 +1,9 @@
 import React, {useState} from 'react'
 import Navbar from '../../components/navbar'
 import Sidebar from '../../components/sidebar'
-import Aries from '../../components/zodiac-signs/aries'
-import {ariesData} from '../../components/zodiac-signs/data'
+// import Aries from '../../components/zodiac-signs/aries'
+import HoroscopeAries from '../../components/horoscope-pages/horoscope_aries'
+// import {AriesData} from '../../components/horoscope-pages/horoscope_aries'
 
 const AriesPage = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,7 +14,7 @@ const AriesPage = () => {
   return (
     <>
         <Sidebar isOpen={isOpen} toggle={toggle} />
-        <Aries {...ariesData}/>
+        <HoroscopeAries />
     </>
   )
 }

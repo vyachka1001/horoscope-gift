@@ -1,4 +1,4 @@
-export const ariesData = {
+export const AriesData = {
     id: 'aries',
     lightBg: false,
     lifghtText: true,
@@ -8,7 +8,8 @@ export const ariesData = {
     // description: 'your text',
     butttonLabel: 'Get Started',
     imgStart: false,
-    img: require('../../images/zodiac-signs/img-for-pages/aries1.png'),
+    img: require('../../images/zodiac-signs/aries.svg'),
+    imgStart:false,
     alt: '',
     dark: true,
     primary: true,

@@ -10,7 +10,6 @@ export const ZodiacContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: #000;
-
     @media screen and (max-width: 768px){
         height: 1100px;
     }
@@ -27,7 +26,7 @@ export const ZodiacWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 16px;
-    padding: 0 50px;
+    padding: 0 30px;
 
     @media screen and (max-width: 1000px){
         grid-template-columns: 1fr 1fr;
@@ -47,9 +46,9 @@ export const ZodiacCard = styled(LinkR)`
     justify-content: flex-start;
     align-items: center;
     border-radius: 30px;
-    max-height: 210px;
-    max-width: 210px;
-    padding: 30px;
+    height: 210px;
+    width: 210px;
+    padding: 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0.2);
     transition: all 0.1s ease-in-out;
     text-decoration: none;
@@ -72,8 +71,8 @@ export const ZodiacIcon = styled.img`
 export const ZodiacH1 = styled.h1`
     font-size: 2.5rem;
     color: #fff;
-    margin-bottom: 64px;
-
+    margin-bottom: 50px;
+    padding: 0;
     @media screen and (max-width:480px){
         font-size: 2rem;
     }
@@ -81,11 +80,11 @@ export const ZodiacH1 = styled.h1`
 
 export const ZodiacH2 = styled.h2`
     font-size: 1rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #fff;
 `
 export const ZodiacP = styled.p`
-    font-size: 1rem;
+    font-size: 15px;
     text-align: center;
     color: #000;
 

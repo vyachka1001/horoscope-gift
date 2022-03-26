@@ -14,8 +14,8 @@ export const Container = styled.div`
 `
 export const Container2 = styled.div`
     color: #fff;
-    // background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
-    background: #000;
+    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    // background: #000;
     
     @media screen and (max-width: 768px) {
         padding: 100px 0;
@@ -56,7 +56,7 @@ export const Column2 = styled.div`
     grid-area: col2;
 `
 export const TextWrapper = styled.div`
-    max-width:540px;
+    max-width: 840px;
     padding-top: 0;
     padding-bottom: 60px;
 `
@@ -77,7 +77,7 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    // color: ${({ lightText }) => (lightText ? '#f7f8fa' : '010606' )};
+    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '010606' )};
 
     @media screen and (max-width: 480px) {
         font-size: 32px;
@@ -91,13 +91,14 @@ export const Subtitle = styled.p`
     font-size: 18px;
 
     line-height: 24px;
-    // color: ${({ darkText }) => (darkText ? '#010606' : '#fff' )};
+    color: ${({ darkText }) => (darkText ? '#010606' : '#fff' )};
 
 `
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+    max-width: 500px;
 
 `
 
