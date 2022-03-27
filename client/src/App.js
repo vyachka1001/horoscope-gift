@@ -5,17 +5,17 @@ import Home from './pages'
 import LogInPage from './pages/log-in-page';
 import SignUpPage from './pages/sign-up-page';
 import AriesPage from './pages/zodiac-pages/aries-page';
-import TaurusPage from './pages/sign-up-page';
-import GeminiPage from './pages/sign-up-page';
-import CancerPage from './pages/sign-up-page';
-import LeoPage from './pages/sign-up-page';
-import VirgoPage from './pages/sign-up-page';
-import LibraPage from './pages/sign-up-page';
-import ScorpioPage from './pages/sign-up-page';
-import SagittariusPage from './pages/sign-up-page';
-import CapricornPage from './pages/sign-up-page';
-import AquariusPage from './pages/sign-up-page';
-import PiscesPage from './pages/sign-up-page';
+import TaurusPage from './pages/zodiac-pages/taurus-page';
+import GeminiPage from './pages/zodiac-pages/gemini-page';
+import CancerPage from './pages/zodiac-pages/cancer-page';
+import LeoPage from './pages/zodiac-pages/leo-page';
+import VirgoPage from './pages/zodiac-pages/virgo-page';
+import LibraPage from './pages/zodiac-pages/libra-page';
+import ScorpioPage from './pages/zodiac-pages/scorpio-page';
+import SagittariusPage from './pages/zodiac-pages/sagittarius-page';
+import CapricornPage from './pages/zodiac-pages/capricorn-page';
+import AquariusPage from './pages/zodiac-pages/aquarius-page';
+import PiscesPage from './pages/zodiac-pages/pisces-page';
 
 function App() {
   return (

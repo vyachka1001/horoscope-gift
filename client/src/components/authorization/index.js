@@ -1,10 +1,14 @@
 import React from 'react'
-import {Container, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text} from './authorization_elements'
+import {Container, MainBg, VideoBg, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text} from './authorization_elements'
+import Video from '../../videos/authorization.mp4'
 
 const LogIn = () => {
   return (
     <>
     <Container>
+      <MainBg>
+        <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+      </MainBg>
         <FormWrap>
             <Icon to="/">horoscope</Icon>
             <FormContent> 

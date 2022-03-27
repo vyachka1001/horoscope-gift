@@ -12,6 +12,25 @@ export const Container = styled.div`
 
     overflow: hidden;
     background: #B762C1;
+
+`
+export const MainBg = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+`
+
+export const VideoBg = styled.video`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232a34;
 `
 
 export const FormWrap = styled.div`
@@ -33,6 +52,7 @@ export const Icon = styled(Link)`
     color: #fff;
     font-weight: 700;
     font-size: 32px;
+    z-index: 2;
 
     @media screen and (max-width:400px) {
         margin-left: 16px;
