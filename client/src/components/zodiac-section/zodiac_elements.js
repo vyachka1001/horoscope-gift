@@ -84,7 +84,7 @@ export const ZodiacH2 = styled.h2`
     color: #fff;
 `
 export const ZodiacP = styled.p`
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     color: #000;
 

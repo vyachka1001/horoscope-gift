@@ -23,12 +23,12 @@ const Zodiac = () => {
             <ZodiacCard to='/aries'>
                 <ZodiacIcon src={Icon1}/>
                 <ZodiacH2>Aries</ZodiacH2>
-                <ZodiacP> 21 march - 20 april</ZodiacP>
+                <ZodiacP> 21 march - 20 apr.</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/taurus'>
                 <ZodiacIcon src={Icon2}/>
                 <ZodiacH2>Taurus</ZodiacH2>
-                <ZodiacP> 21 april - 20 may</ZodiacP>
+                <ZodiacP> 21 apr. - 20 may</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/gemini'>
                 <ZodiacIcon src={Icon3}/>
@@ -43,42 +43,42 @@ const Zodiac = () => {
             <ZodiacCard to='/leo'>
                 <ZodiacIcon src={Icon5}/>
                 <ZodiacH2>Leo</ZodiacH2>
-                <ZodiacP> 23 july - 22 august</ZodiacP>
+                <ZodiacP> 23 july - 22 aug.</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/virgo'>
                 <ZodiacIcon src={Icon6}/>
                 <ZodiacH2>Virgo</ZodiacH2>
-                <ZodiacP> 23 august - 23 september</ZodiacP>
+                <ZodiacP> 23 aug. - 23 sept.</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/libra'>
                 <ZodiacIcon src={Icon7}/>
                 <ZodiacH2>Libra</ZodiacH2>
-                <ZodiacP> 24 september - 23 october</ZodiacP>
+                <ZodiacP> 24 sept. - 23 oct.</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/scorpio'>
                 <ZodiacIcon src={Icon8}/>
                 <ZodiacH2>Scorpio</ZodiacH2>
-                <ZodiacP> 24 october - 22 november</ZodiacP>
+                <ZodiacP> 24 oct. - 22 nov.</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/sagittarius'>
                 <ZodiacIcon src={Icon9}/>
                 <ZodiacH2>Sagittarius</ZodiacH2>
-                <ZodiacP> 23 november - 21 december</ZodiacP>
+                <ZodiacP> 23 nov. - 21 dec.</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/capricorn'>
                 <ZodiacIcon src={Icon10}/>
                 <ZodiacH2>Capricorn</ZodiacH2>
-                <ZodiacP> 22 december - 20 january</ZodiacP>
+                <ZodiacP> 22 dec. - 20 jan.</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/aquarius'>
                 <ZodiacIcon src={Icon11}/>
                 <ZodiacH2>Aquarius</ZodiacH2>
-                <ZodiacP> 21 january - 18 february</ZodiacP>
+                <ZodiacP> 21 jan. - 18 feb.</ZodiacP>
             </ZodiacCard>
             <ZodiacCard to='/pisces'>
                 <ZodiacIcon src={Icon12}/>
                 <ZodiacH2>Pisces</ZodiacH2>
-                <ZodiacP> 19 february - 20 march</ZodiacP>
+                <ZodiacP> 19 feb. - 20 mar.</ZodiacP>
             </ZodiacCard>
         </ZodiacWrapper>
     </ZodiacContainer>
