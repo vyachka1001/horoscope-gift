@@ -113,6 +113,20 @@ export const NavBtnLink = styled(LinkR)`
     color: #010606;
 }
 `
+export const NavPageLink = styled(LinkR)`
+color: #fff;
+display: flex;
+align-items: center;
+text-decoration: none;
+padding: 0 1rem;
+height: 100%;
+cursor: pointer;
+
+&.active{
+   border-bottom: 3px solid #B762C1;
+}
+
+`
 export const NavBtnLinkSignUp = styled(LinkR)`
     color: #B762C1; 
     background: transparent;

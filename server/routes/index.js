@@ -2,11 +2,11 @@ const Router = require('express')
 const router = new Router()
 const certificateRouter = require('./route-certificate')
 const userRouter = require('./route-user')
-const catalogCategoryRouter = require ('./route-catalog-category')
+const categoryRouter = require ('./route-category')
 
 
 router.use('/user', userRouter)
 router.use('/certificate', certificateRouter)
-router.use('/catalog-category', catalogCategoryRouter)
+router.use('/category', categoryRouter)
 
 module.exports = router 

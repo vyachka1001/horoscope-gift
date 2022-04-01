@@ -7,6 +7,7 @@ import {BsWind} from 'react-icons/bs'
 import {GiHighGrass} from 'react-icons/gi'
 import {AiFillFire} from 'react-icons/ai'
 import ShowDate from '../date/index'
+import {CertificatesContainer} from './horoscope_taurus_elements'
 
 const HoroscopeTaurus = () => {
   return (
@@ -51,6 +52,9 @@ const HoroscopeTaurus = () => {
           </div>
         </div>
       </section>
+      <CertificatesContainer>
+
+      </CertificatesContainer>
     </>
   )
 }

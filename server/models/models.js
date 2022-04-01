@@ -24,7 +24,7 @@ const Certificate = sequelize.define('certificate',{
     rating: {type: DataTypes.INTEGER, defaultValue: 0}
 })
 
-const CatalogCategory = sequelize.define('catalog-category',{
+const Category = sequelize.define('category',{
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     name: {type: DataTypes.STRING, unique: true, allowNull: false}
 })
@@ -55,12 +55,12 @@ BasketCertificate.belongsTo(Certificate)
 Certificate.hasMany(Rating)
 Rating.belongsTo(Certificate)
 
-CatalogCategory.hasMany(Certificate)
-Certificate.belongsTo(CatalogCategory)
+Category.hasMany(Certificate)
+Certificate.belongsTo(Category)
 
-Certificate.hasOne(CertificateInfo)
+Certificate.hasOne(CertificateInfo, {as: 'info'})
 CertificateInfo.belongsTo(Certificate)
 
 module.exports = {
-    User, Basket, BasketCertificate, Certificate, CertificateInfo, CatalogCategory, Rating
+    User, Basket, BasketCertificate, Certificate, CertificateInfo, Category, Rating
 }
