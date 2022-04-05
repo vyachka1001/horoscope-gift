@@ -16,6 +16,7 @@ import AquariusPage from './pages/zodiac-pages/aquarius-page';
 import PiscesPage from './pages/zodiac-pages/pisces-page';
 import CatalogPage from './pages/catalog/catalog'
 import CertificatePage from './pages/catalog/certificate-page'
+import CreatorsPage from './pages/creators/index'
 
 export const publicRoutes = [
     {
@@ -81,6 +82,10 @@ export const publicRoutes = [
     {
         path: '/catalog',
         Component: CatalogPage
+    },
+    {
+        path: '/creators',
+        Component: CreatorsPage
     },
     {
         path: '/catalog/certificate' + '/:id',

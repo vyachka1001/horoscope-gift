@@ -36,7 +36,7 @@ return (
           <NavLinks to= 'zodiac' smooth={true} duration={1500} spy={true} exact='true' offset={-80}>Zodiac Signs</NavLinks>
         </NavItem>
         <NavItem>
-          <NavLinks to= '/creators'>Creators</NavLinks>
+          <NavPageLink to= '/creators'>Creators</NavPageLink>
         </NavItem>
         <NavItem>
           <NavPageLink to= '/catalog'>Catalog</NavPageLink>
