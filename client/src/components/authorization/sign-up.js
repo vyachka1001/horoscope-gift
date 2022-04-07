@@ -1,6 +1,6 @@
 import React from 'react'
 import {Container, MainBg, VideoBg, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text} from './authorization_elements'
-import Video from '../../videos/authorization.mp4'
+import Video from '../../videos/space.mp4'
 
 
 const SignUp = () => {

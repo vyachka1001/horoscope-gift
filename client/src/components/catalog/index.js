@@ -8,12 +8,18 @@ import {Context} from '../../index'
 import styled from 'styled-components'
 import {fetchCategory} from '../../http/certificate-API'
 import {fetchCertificate} from '../../http/certificate-API'
+import Sidebar from './sidebar/sidebar'
+import Slider from './slider/slider'
+import CNavbar from './cnavbar/cnavbar'
+
+
 
 
 export const CatalogContainer = styled.div`
     height: 900px;
     display: flex; 
     flex-direction: column;
+    background: #000;
 
 `
 export const ItemContainer = styled.div`
@@ -35,7 +41,11 @@ const CatalogPage = observer (() => {
 
     return (
         <CatalogContainer>
-            <TypeBar />
+            <CNavbar />
+            {/* <Sidebar /> */}
+
+            {/* <Slider /> */}
+            {/* <TypeBar /> */}
 
             <CertificateList />
         </CatalogContainer>

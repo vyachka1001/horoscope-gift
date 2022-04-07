@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
-import { Nav, NavbarContainer, NavPageLink, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavBtn, NavBtnLink, NavBtnLinkSignUp} from './navbar_elements'
+import { Nav, NavbarContainer, NavPageLink, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavInfo, NavCart, NavBtnLinkSignUp} from './cnavbar-elements'
 import {animateScroll as scroll} from 'react-scroll'
 
-const Navbar = ({ toggle }) => {
+const CNavbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
 
   const changeNav = () => {
@@ -32,7 +32,7 @@ return (
         <FaBars />
       </MobileIcon>
       <NavMenu>
-        <NavItem>
+        {/* <NavItem>
           <NavLinks to= 'zodiac' smooth={true} duration={1500} spy={true} exact='true' offset={-80}>Zodiac Signs</NavLinks>
         </NavItem>
         <NavItem>
@@ -40,19 +40,19 @@ return (
         </NavItem>
         <NavItem>
           <NavPageLink to= '/creators'>Creators</NavPageLink>
-        </NavItem>
-        <NavItem>
+        </NavItem> */}
+        {/* <NavItem>
           <NavLinks to= 'signup'></NavLinks>
-        </NavItem>
+        </NavItem> */}
       </NavMenu>    
-      <NavBtn>
-        <NavBtnLinkSignUp to='/signup' >Sign Up</NavBtnLinkSignUp>
-        <NavBtnLink to= '/login'>Log In</NavBtnLink>
-      </NavBtn>
+      <NavInfo>
+        <NavCart>Your Wishlist</NavCart>
+        <NavCart>Your Cart</NavCart>
+      </NavInfo>
      </NavbarContainer>
    </Nav>
    </>
   );
 };
 
-export default Navbar;
+export default CNavbar;
