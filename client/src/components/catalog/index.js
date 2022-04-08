@@ -43,7 +43,6 @@ const CatalogPage = observer (() => {
         <CatalogContainer>
             <CNavbar />
             {/* <Sidebar /> */}
-
             {/* <Slider /> */}
             {/* <TypeBar /> */}
 
