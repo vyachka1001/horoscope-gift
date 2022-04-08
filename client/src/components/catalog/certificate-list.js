@@ -24,10 +24,12 @@ const CertificateList = observer( () => {
     return (
         
                 <ItemWrapper>
-                    {certificate.certificates.map(certificate => 
-                        <CertificateItem key={certificate.id} certificate={certificate}/>
+                
+                {certificate.certificates.map(certificate => 
+                    <CertificateItem key={certificate.id} certificate={certificate}/>
                     )}
-                </ItemWrapper>
+                    
+                 </ItemWrapper>
           
     )
 })

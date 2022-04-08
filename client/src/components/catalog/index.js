@@ -7,7 +7,7 @@ import {observer} from 'mobx-react-lite'
 import {Context} from '../../index'
 import styled from 'styled-components'
 import {fetchCategory} from '../../http/certificate-API'
-import {fetchCertificate} from '../../http/certificate-API'
+import {fetchCertificates} from '../../http/certificate-API'
 import Sidebar from './sidebar/sidebar'
 import Slider from './slider/slider'
 import CNavbar from './cnavbar/cnavbar'
@@ -36,8 +36,13 @@ const CatalogPage = observer (() => {
 
     useEffect(() => {
         fetchCategory().then(data => certificate.setCategory(data))
-        fetchCertificate().then(data => certificate.setCertificates(data))
+        fetchCertificates(null).then(data => certificate.setCertificates(data))
     }, [])
+
+    useEffect(() => {
+        fetchCertificates(certificate.selectedCategory.id).then(data => {
+            certificate.setCertificates(data)})
+    }, [certificate.selectedCategory])
 
     return (
         <CatalogContainer>

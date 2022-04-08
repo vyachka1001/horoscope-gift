@@ -4,7 +4,6 @@ import {Context} from '../../../index'
 
 import './pop-up-categories.css'
 
-// function Dropdown({ selected, setSelected }) {
 const Dropdown = observer (() => {
 
     const {certificate} = useContext(Context)

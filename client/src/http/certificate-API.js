@@ -6,8 +6,10 @@ export const fetchCategory = async () => {
     return data
 }
 
-export const fetchCertificate = async () => {
-    const {data} = await $host.get('api/certificate')
+export const fetchCertificates = async (categoryId) => {
+    const {data} = await $host.get('api/certificate', {params: {
+        categoryId
+    }})
     return data
 }
 
