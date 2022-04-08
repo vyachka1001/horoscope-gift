@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
 import { Nav, NavbarContainer, NavPageLink, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavInfo, NavCart, NavBtnLinkSignUp} from './cnavbar-elements'
 import {animateScroll as scroll} from 'react-scroll'
+import Dropdown from "../pop-up-categories/index";
 
 const CNavbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
@@ -23,6 +24,9 @@ const CNavbar = ({ toggle }) => {
     scroll.scrollToTop();
   }
 
+  const [selected, setSelected] = useState("Categories");
+
+
 return (
    <>   
    <Nav scrollNav={scrollNav}>
@@ -32,18 +36,10 @@ return (
         <FaBars />
       </MobileIcon>
       <NavMenu>
-        {/* <NavItem>
-          <NavLinks to= 'zodiac' smooth={true} duration={1500} spy={true} exact='true' offset={-80}>Zodiac Signs</NavLinks>
-        </NavItem>
         <NavItem>
-          <NavPageLink to= '/catalog'>Catalog</NavPageLink>
-        </NavItem>
-        <NavItem>
-          <NavPageLink to= '/creators'>Creators</NavPageLink>
-        </NavItem> */}
-        {/* <NavItem>
-          <NavLinks to= 'signup'></NavLinks>
-        </NavItem> */}
+        <Dropdown selected={selected} setSelected={setSelected} />
+          {/* <NavPageLink to= '/creators'>Creators</NavPageLink> */}
+        </NavItem> 
       </NavMenu>    
       <NavInfo>
         <NavCart>Your Wishlist</NavCart>

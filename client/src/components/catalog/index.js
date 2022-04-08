@@ -1,4 +1,4 @@
-import React, {useEffect, useContext} from 'react'
+import React, {useEffect, useContext, useState} from 'react'
 import TypeBar from '../typebar/typebar'
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
@@ -42,11 +42,16 @@ const CatalogPage = observer (() => {
     return (
         <CatalogContainer>
             <CNavbar />
+
+
             {/* <Sidebar /> */}
             {/* <Slider /> */}
             {/* <TypeBar /> */}
 
+
             <CertificateList />
+        
+
         </CatalogContainer>
     )
 })
