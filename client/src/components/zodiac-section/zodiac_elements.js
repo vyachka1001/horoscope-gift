@@ -50,7 +50,7 @@ export const ZodiacCard = styled(LinkR)`
     width: 210px;
     padding: 20px;
     box-shadow: 0 1px 3px rgba(0, 0, 0.2);
-    transition: all 0.1s ease-in-out;
+    transition: all 0.2s ease-in-out;
     text-decoration: none;
 
     &:hover {
@@ -61,6 +61,7 @@ export const ZodiacCard = styled(LinkR)`
 
     }
 
+ 
 `
 export const ZodiacIcon = styled.img`
     height: 85px;

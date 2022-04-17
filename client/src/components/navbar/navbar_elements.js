@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
+import { NEWButton } from '../button_element';
 
 export const Nav = styled.nav` 
     background: ${({ scrollNav}) => (scrollNav ? '#000' : 'transparent')};
@@ -140,9 +141,54 @@ export const NavBtnLinkSignUp = styled(LinkR)`
     border: none;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+
     text-decoration: none;
 
     &:hover{
     transition: all 0.2s ease-in-out;
-    color: #EA99D5;
+    color: black;
+   
 `
+export const HeroButtonLog = styled(NEWButton)`
+	color: black;
+    padding: ${({ big }) => (big ? '14px 48px' : '10px 22px')};
+	border: 2px solid #B762C1;
+	&:before {
+		background: #B762C1;
+		height: 500%;
+	}
+	&:hover:before {
+		height: 0%;
+	}
+	&:hover {
+		color: black;
+	}
+`;
+export const HeroButtonSign = styled(NEWButton)`
+	color: #B762C1;
+    padding: ${({ big }) => (big ? '14px 48px' : '10px 18px')};
+	border: 2px solid #B762C1;
+    font-weight: bold;
+    margin-right: 5px;
+	&:before {
+		background: #B762C1;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		transition: all 0.6s ease;
+		width: 100%;
+		height: 0%;
+		transform: translate(-50%, -50%) rotate(45deg);
+
+	}
+	&:hover:before {
+		height: 500%;
+
+	}
+	&:hover {
+		color: black;
+	}
+`;

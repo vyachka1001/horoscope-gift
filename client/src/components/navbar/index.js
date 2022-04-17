@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
-import { Nav, NavbarContainer, NavPageLink, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavBtn, NavBtnLink, NavBtnLinkSignUp} from './navbar_elements'
+import { Nav, NavbarContainer, HeroButtonLog, HeroButtonSign,  NavPageLink, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavBtn, NavBtnLink, NavBtnLinkSignUp} from './navbar_elements'
 import {animateScroll as scroll} from 'react-scroll'
+import {NEWButton} from '../button_element'
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
@@ -47,7 +48,7 @@ return (
       </NavMenu>    
       <NavBtn>
         <NavBtnLinkSignUp to='/signup' >Sign Up</NavBtnLinkSignUp>
-        <NavBtnLink to= '/login'>Log In</NavBtnLink>
+        <HeroButtonLog to= '/login'>Log In</HeroButtonLog>
       </NavBtn>
      </NavbarContainer>
    </Nav>

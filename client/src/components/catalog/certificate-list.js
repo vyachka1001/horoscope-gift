@@ -19,7 +19,6 @@ margin-top: 30px;
 
 const CertificateList = observer( () => {
 
-
     const {certificate} = useContext(Context)
     return (
         
