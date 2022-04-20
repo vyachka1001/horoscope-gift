@@ -50,21 +50,6 @@ class certificateController {
         }
         return res.json(certificates)
     }
-
-    // async getAll (req, res){
-    //     let {categoryId, limit, page} = req.query
-    //     page = page || 1 
-    //     limit = limit || 9
-    //     let offset = page * limit - limit 
-    //     let certificates;
-    //     if (!categoryId){
-    //         certificates = await Certificate.findAndCountAll(limit, offset)
-    //     }
-    //     if (categoryId){
-    //         certificates = await Certificate.findAndCountAll({where: {categoryId}, limit, offset})
-    //     }
-    //     return res.json(certificates)
-    // }
 }
 
 module.exports = new certificateController()
