@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {MdKeyboardArrowRight, MdArrowForward } from 'react-icons/md'
-
+import { NEWButton } from '../button_element';
 
 export const MainContainer = styled.div`
     background: #0c0c0c;
@@ -99,3 +99,17 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
     margin-left: 8px;
     font-size: 20px;      
 `
+
+export const HeroButton = styled(NEWButton)`
+	color: black;
+	&:before {
+		background: #fff;
+		height: 500%;
+	}
+	&:hover:before {
+		height: 0%;
+	}
+	&:hover {
+		color: white;
+	}
+`;

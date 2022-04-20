@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {Link} from 'react-scroll'
+import {Link as LinkR} from 'react-router-dom'
 
 export const Button = styled(Link)`
     border-radius: 50px;
@@ -24,3 +25,39 @@ export const Button = styled(Link)`
 
 
 `
+export const NEWButton = styled(LinkR)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	border-radius: 30px;
+	background: none;
+	white-space: nowrap;
+    padding: ${({ big }) => (big ? '14px 48px' : '15px 30px')};
+    font-size: ${({ fontBig }) => (fontBig ? '20px' : '18px')};
+	color: #fff;
+	outline: none;
+	border: 2px solid #fff;
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	&:before {
+		background: #fff;
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+		transition: all 0.7s ease;
+		width: 100%;
+		height: 0%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+	&:hover:before {
+		height: 500%;
+
+	}
+	&:hover {
+		color: black;
+	}
+`;

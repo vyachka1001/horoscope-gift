@@ -18,3 +18,8 @@ export const CertificatesContainer = styled.div`
         height: 1300px;
     }
 `
+export const Name = styled.h1`
+    color: #fff;
+    font-size:18px;
+    margin: auto;
+`

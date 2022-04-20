@@ -7,3 +7,4 @@ const $host = axios.create({
 export {
     $host
 }
+

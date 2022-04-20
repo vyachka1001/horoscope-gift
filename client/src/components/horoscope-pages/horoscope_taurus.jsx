@@ -1,5 +1,5 @@
 import React from 'react'
-import './horoscope_taurus.css'
+import './horoscope_scorpio.css'
 import aries from '../../images/zodiac-signs/img-for-pages/stars.svg'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
@@ -7,12 +7,15 @@ import {BsWind} from 'react-icons/bs'
 import {GiHighGrass} from 'react-icons/gi'
 import {AiFillFire} from 'react-icons/ai'
 import ShowDate from '../date/index'
-import {CertificatesContainer} from './horoscope_taurus_elements'
+import Horoscope from '../horoscopes/index'
 
 const HoroscopeTaurus = () => {
+
+
   return (
     <>
-      <section id='aries'>
+    <Horoscope/>
+      {/* <section id='aries'>
         <h2>Taurus horoscope for today</h2>
         <h5><ShowDate /></h5>
         <div className="container horoscope_aries_container">
@@ -44,6 +47,7 @@ const HoroscopeTaurus = () => {
             </div>
 
             <horoscope className="horoscope">
+
               <h3>Today the Universe will answer some of your questions. It turns out that you were right about everything and doubted yourself in vain. It is useful on this day to relax with a book or a historical film - the main thing is to write down new information on the subcortex. You can compete with your friends in board games or start a new training that has been worrying you for a long time. In general, move your brains on this day - it's useful.</h3>
               <h3>Сегодня Вселенная ответит на несколько ваших вопросов. Окажется, вы во всем были правы и зря сомневались в себе. Полезно в этот день отдыхать за книгой или историческим фильмом – главное, записывать на подкорку новую информацию. Можно сразиться с друзьями в настолки или начать новое обучение, которое вас давно волновало. В общем, шевелите мозгами в этот день – полезно.</h3>
             </horoscope>
@@ -51,10 +55,7 @@ const HoroscopeTaurus = () => {
             <a href="#contact" className='button'>Lets talk</a>
           </div>
         </div>
-      </section>
-      <CertificatesContainer>
-
-      </CertificatesContainer>
+      </section> */}
     </>
   )
 }
