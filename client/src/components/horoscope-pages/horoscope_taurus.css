@@ -19,6 +19,14 @@
 
     --transition: all 400ms ease;
 
+    --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+    
+    --color-bg: #040C18;
+    --color-footer : #031B34;
+    --color-blog: #042c54;
+    --color-text: #81AFDD;
+    --color-subtext: #FF8A71;
 }
 
 ::-webkit-scrollbar{
@@ -29,7 +37,7 @@ body{
     font-family: 'Encode Sans Expanded', sans-serif;
     background: #000;
     line-height:1.7;
-    color: #fff;
+    /* color: #000; */
 }
 
 section{
@@ -106,6 +114,8 @@ img {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 
 .card{
@@ -128,7 +138,8 @@ img {
 .aries_icon{
     color: var(--color-primary);
     font-size: 1.4rem ;
-    margin-bottom: 1rem;
+    /* margin-bottom: 2rem; */
+    /* margin-top: 0.5rem; */
 
 }
 
@@ -139,4 +150,147 @@ img {
 .card small{
     font-size: 0.7rem;
     color: var(--color-light);
+}
+
+
+.gpt3__whatgpt3 {
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #B762C1 25%, rgb(61, 4, 84) 85%, rgb(66, 4, 84) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #B762C1 25%, rgba(61, 4, 84) 85%, rgba(66, 4, 84) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #B762C1 25%, rgba(61, 4, 84) 85%, rgba(66, 4, 84) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #B762C1 25%, rgba(61, 4, 84) 85%, rgba(66, 4, 84) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #B762C1 25%, rgba(61, 4, 81) 85%, rgba(66, 4, 84) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.gpt3__whatgpt3-feature {
+    display: flex;
+    margin: auto;
+    width: 700px;
+
+    /* color: var(--color-text); */
+}
+
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-feature .gpt3__features-container__feature {
+    margin: 0;
+  
+}
+
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-feature  {
+    margin: auto;
+
+}
+.gpt3__features-container_feature-text{
+    margin: 0;
+}
+
+.gpt3__whatgpt3-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 4rem 0 2rem;
+}
+
+.gpt3__whatgpt3-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    color: var(--gradient-text);
+    
+    /* font-family: var(--font-family); */
+    max-width: 510px;
+}
+
+.gpt3__whatgpt3-heading p {
+    /* font-family: var(--font-family); */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--gradient-text);
+    cursor: pointer;
+}
+
+.gpt3__whatgpt3-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-style: uppercase;
+    /* margin-top: 1rem; */
+}
+
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-container .gpt3__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+.character{
+    margin: auto;
+}
+.character h1{
+    font-size: 18px;
+}
+
+/* Customizing feature component as per needs */
+.gpt3__whatgpt3-container .gpt3__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .gpt3__whatgpt3-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .gpt3__whatgpt3-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .gpt3__whatgpt3-feature .gpt3__features-container__feature {
+        flex-direction: column;
+    }
+
+    /* Customizing feature component as per needs */
+    .gpt3__whatgpt3-feature .gpt3__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .gpt3__whatgpt3-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .gpt3__whatgpt3-container .gpt3__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
 }

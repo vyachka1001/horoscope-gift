@@ -15,6 +15,7 @@ class GetDescription extends  React.Component {
         this.state = {
             json: {}
         }
+        
     }
   
     componentDidMount() {
