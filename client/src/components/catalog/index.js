@@ -20,7 +20,8 @@ export const CatalogContainer = styled.div`
     display: flex; 
     flex-direction: column;
     background: #000;
-
+    // justify-content: center;
+    // align-items: center;
 `
 export const ItemContainer = styled.div`
     height: 900px;

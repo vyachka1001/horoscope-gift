@@ -6,15 +6,18 @@ import CertificateItem from './certificate-item'
 import styled from 'styled-components'
 
 export const ItemWrapper = styled.div`
-max-width: 1000px;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-align-items: center;
-grid-gap: 16px;
-padding: 0 30px;
-margin-top: 30px;
-
+    // max-width: 1000px;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 16px;
+    // padding: 0 30px;
+    // margin-top: 30px;
+    background: #000;
+    padding-left: 40px;
 `
 
 const CertificateList = observer( () => {
