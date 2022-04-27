@@ -5,14 +5,14 @@ import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {BsWind} from 'react-icons/bs'
 import {GiHighGrass} from 'react-icons/gi'
-import {AiFillFire} from 'react-icons/ai'
+import {IoRose} from 'react-icons/io5'
 import {IoIosColorPalette} from 'react-icons/io'
 import {RiHandHeartFill} from 'react-icons/ri'
 import ShowDate from '../date/index'
 import styled from 'styled-components'
 import Feature from '../feature/feature';
-import {BsMusicNoteBeamed} from 'react-icons/bs'
-import {RiUserHeartFill} from 'react-icons/ri'
+import {IoHeartCircleOutline} from 'react-icons/io5'
+import {GiMagnifyingGlass} from 'react-icons/gi'
 import {GiBiceps} from 'react-icons/gi'
 import Video from '../../videos/space.mp4'
 
@@ -172,7 +172,7 @@ export const MainBg2 = styled.div`
     overflow: hidden;
 `
 
-export default class HoroscopeTaurus extends  React.Component {
+export default class HoroscopeGemini extends  React.Component {
 
     constructor(props) {
         super(props);
@@ -194,7 +194,7 @@ export default class HoroscopeTaurus extends  React.Component {
         <>
         <Container> 
             <MainBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
             </MainBg>
             <HoroscopeContainer>
               <section id='aries'>
@@ -238,7 +238,7 @@ export default class HoroscopeTaurus extends  React.Component {
         </Container> 
         <SecondContainer>
             <MainBg2>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
             </MainBg2>
             <InfoSection>
               <ContainerInfo>
@@ -248,16 +248,16 @@ export default class HoroscopeTaurus extends  React.Component {
                   </TitleContainer>
                   <InfoColumns>
                     <Column1>
-                        <InfoIcon><RiUserHeartFill/></InfoIcon>
-                        <Text>Patient</Text>
+                        <InfoIcon><GiMagnifyingGlass/></InfoIcon>
+                        <Text>Curious</Text>
                     </Column1>
                     <Column2>
-                        <InfoIcon><BsMusicNoteBeamed/></InfoIcon>
-                        <Text>Melodious</Text>  
+                        <InfoIcon><IoRose/></InfoIcon>
+                        <Text>Gentle</Text>  
                       </Column2>
                     <Column3>
-                        <InfoIcon><GiBiceps/></InfoIcon>
-                        <Text>Hardworking</Text>  
+                        <InfoIcon><IoHeartCircleOutline/></InfoIcon>
+                        <Text>Kind</Text>  
                     </Column3>
                   </InfoColumns>
                   <CharacteristicContainer>

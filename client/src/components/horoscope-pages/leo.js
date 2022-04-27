@@ -4,7 +4,7 @@ import aries from '../../images/zodiac-signs/img-for-pages/stars.svg'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {BsWind} from 'react-icons/bs'
-import {GiHighGrass} from 'react-icons/gi'
+import {IoSparklesSharp} from 'react-icons/io5'
 import {AiFillFire} from 'react-icons/ai'
 import {IoIosColorPalette} from 'react-icons/io'
 import {RiHandHeartFill} from 'react-icons/ri'
@@ -12,8 +12,8 @@ import ShowDate from '../date/index'
 import styled from 'styled-components'
 import Feature from '../feature/feature';
 import {BsMusicNoteBeamed} from 'react-icons/bs'
-import {RiUserHeartFill} from 'react-icons/ri'
-import {GiBiceps} from 'react-icons/gi'
+import {IoBarbellSharp} from 'react-icons/io5'
+import {IoTrophy} from 'react-icons/io5'
 import Video from '../../videos/space.mp4'
 
 export const StyledIcons = styled.div`
@@ -172,7 +172,7 @@ export const MainBg2 = styled.div`
     overflow: hidden;
 `
 
-export default class HoroscopeTaurus extends  React.Component {
+export default class HoroscopeLeo extends  React.Component {
 
     constructor(props) {
         super(props);
@@ -194,11 +194,11 @@ export default class HoroscopeTaurus extends  React.Component {
         <>
         <Container> 
             <MainBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
             </MainBg>
             <HoroscopeContainer>
               <section id='aries'>
-              <h2>Taurus horoscope for today</h2>
+              <h2>Leo horoscope for today</h2>
               <h5><ShowDate /></h5>
               <div className="container horoscope_aries_container">
                 <div className="left_column">
@@ -216,8 +216,8 @@ export default class HoroscopeTaurus extends  React.Component {
                     </article>
 
                     <article className="card">
-                      <StyledIcons><GiHighGrass/></StyledIcons>
-                      <Styledh5>Earth</Styledh5>
+                      <StyledIcons><AiFillFire/></StyledIcons>
+                      <Styledh5>Fire</Styledh5>
                       <small>Your element</small>
                     </article>
 
@@ -238,7 +238,7 @@ export default class HoroscopeTaurus extends  React.Component {
         </Container> 
         <SecondContainer>
             <MainBg2>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
             </MainBg2>
             <InfoSection>
               <ContainerInfo>
@@ -248,20 +248,20 @@ export default class HoroscopeTaurus extends  React.Component {
                   </TitleContainer>
                   <InfoColumns>
                     <Column1>
-                        <InfoIcon><RiUserHeartFill/></InfoIcon>
-                        <Text>Patient</Text>
+                        <InfoIcon><IoBarbellSharp/></InfoIcon>
+                        <Text>Athletic</Text>
                     </Column1>
                     <Column2>
-                        <InfoIcon><BsMusicNoteBeamed/></InfoIcon>
-                        <Text>Melodious</Text>  
+                        <InfoIcon><IoSparklesSharp/></InfoIcon>
+                        <Text>Self-confident</Text>  
                       </Column2>
                     <Column3>
-                        <InfoIcon><GiBiceps/></InfoIcon>
-                        <Text>Hardworking</Text>  
+                        <InfoIcon><IoTrophy/></InfoIcon>
+                        <Text>Leader</Text>  
                     </Column3>
                   </InfoColumns>
                   <CharacteristicContainer>
-                    <Characteristic>A fixed sign of the elements of the Earth, creator and gourmet, Taurus embodies the principle of love for life and its benefits, and also has the qualities of perseverance and practicality. Taurus knows how and loves to work, patiently creates comfortable living conditions for himself. Able to wait a long time and patiently for the maturation of suitable conditions. The patience of Taurus is amazing, it is difficult for him to learn something new and adapt to unfamiliar conditions.Very receptive to everything beautiful, has a strong intuition, tends to analyze the situation before taking action. The gift of Taurus is to make beautiful dreams come true.</Characteristic>
+                    <Characteristic>A fixed sign of the element of Fire, Leo has the gift of creation and perseverance in achieving his goals. This is an active person striving for success and popularity. A strong, sensitive and loving nature, often influenced by emotions and feelings. Leo is generous, determined and brave. Self-control and ambition are strong traits of this sign. Not indifferent to attention, flattery and luxury. Leo often depends on the evaluation of their actions and achievements by others. A high score gives extra strength and strengthens self-confidence.</Characteristic>
                   </CharacteristicContainer>
                 </InfoTable>
               </ContainerInfo>

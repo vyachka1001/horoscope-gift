@@ -4,16 +4,16 @@ import aries from '../../images/zodiac-signs/img-for-pages/stars.svg'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
 import {BsWind} from 'react-icons/bs'
-import {GiHighGrass} from 'react-icons/gi'
-import {AiFillFire} from 'react-icons/ai'
+import {IoHappy} from 'react-icons/io5'
+import {IoWaterSharp} from 'react-icons/io5'
 import {IoIosColorPalette} from 'react-icons/io'
 import {RiHandHeartFill} from 'react-icons/ri'
 import ShowDate from '../date/index'
 import styled from 'styled-components'
 import Feature from '../feature/feature';
 import {BsMusicNoteBeamed} from 'react-icons/bs'
-import {RiUserHeartFill} from 'react-icons/ri'
-import {GiBiceps} from 'react-icons/gi'
+import {IoBook} from 'react-icons/io5'
+import {ImFire} from 'react-icons/im'
 import Video from '../../videos/space.mp4'
 
 export const StyledIcons = styled.div`
@@ -182,7 +182,7 @@ export default class HoroscopeTaurus extends  React.Component {
     }
   
     componentDidMount() {
-        const URL = 'https://aztro.sameerkumar.website/?sign=taurus&day=today';
+        const URL = 'https://aztro.sameerkumar.website/?sign=cancer&day=today';
         fetch(URL, {
             method: 'POST'
         }).then(response => response.json())
@@ -194,11 +194,11 @@ export default class HoroscopeTaurus extends  React.Component {
         <>
         <Container> 
             <MainBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
             </MainBg>
             <HoroscopeContainer>
               <section id='aries'>
-              <h2>Taurus horoscope for today</h2>
+              <h2>Cancer horoscope for today</h2>
               <h5><ShowDate /></h5>
               <div className="container horoscope_aries_container">
                 <div className="left_column">
@@ -216,8 +216,8 @@ export default class HoroscopeTaurus extends  React.Component {
                     </article>
 
                     <article className="card">
-                      <StyledIcons><GiHighGrass/></StyledIcons>
-                      <Styledh5>Earth</Styledh5>
+                      <StyledIcons><IoWaterSharp/></StyledIcons>
+                      <Styledh5>Water</Styledh5>
                       <small>Your element</small>
                     </article>
 
@@ -238,7 +238,7 @@ export default class HoroscopeTaurus extends  React.Component {
         </Container> 
         <SecondContainer>
             <MainBg2>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
             </MainBg2>
             <InfoSection>
               <ContainerInfo>
@@ -248,20 +248,20 @@ export default class HoroscopeTaurus extends  React.Component {
                   </TitleContainer>
                   <InfoColumns>
                     <Column1>
-                        <InfoIcon><RiUserHeartFill/></InfoIcon>
-                        <Text>Patient</Text>
+                        <InfoIcon><IoHappy/></InfoIcon>
+                        <Text>Emotional</Text>
                     </Column1>
                     <Column2>
-                        <InfoIcon><BsMusicNoteBeamed/></InfoIcon>
-                        <Text>Melodious</Text>  
+                        <InfoIcon><IoBook/></InfoIcon>
+                        <Text>Clever</Text>  
                       </Column2>
                     <Column3>
-                        <InfoIcon><GiBiceps/></InfoIcon>
-                        <Text>Hardworking</Text>  
+                        <InfoIcon><ImFire/></InfoIcon>
+                        <Text>Passionate</Text>  
                     </Column3>
                   </InfoColumns>
                   <CharacteristicContainer>
-                    <Characteristic>A fixed sign of the elements of the Earth, creator and gourmet, Taurus embodies the principle of love for life and its benefits, and also has the qualities of perseverance and practicality. Taurus knows how and loves to work, patiently creates comfortable living conditions for himself. Able to wait a long time and patiently for the maturation of suitable conditions. The patience of Taurus is amazing, it is difficult for him to learn something new and adapt to unfamiliar conditions.Very receptive to everything beautiful, has a strong intuition, tends to analyze the situation before taking action. The gift of Taurus is to make beautiful dreams come true.</Characteristic>
+                    <Characteristic>The sign of the element of Water is under the auspices of the night luminary. The control of the Moon affects the character of the representatives of this sign, making them vulnerable and sensitive people. The moon and the water element of the sign give Cancer the ability to empathize, the ability to instantly guess the thoughts and aspirations of other people. These are decisive and noble people, often patriots. But if the life of Cancer has been full of deprivation and injustice since childhood, then they have the deceit and charisma of a gangster.</Characteristic>
                   </CharacteristicContainer>
                 </InfoTable>
               </ContainerInfo>
