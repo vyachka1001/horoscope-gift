@@ -13,7 +13,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position : sticky;
     top:0;
-    z-index:10;  
+    z-index: 2;
 
 @media screen and (max-width:960px ){
     transition: 0.8s all ease;
@@ -22,13 +22,30 @@ export const Nav = styled.nav`
 
 export const NavbarContainer = styled.div`
 display: flex; 
-justify-content: space-between; 
-height: 80px; 
-z-index: 1; 
-width: 100%;
-padding: 0 24px;
-max-width: 1100px;
+width: 80%;
+`
+export const Column1 = styled.div`
+    flex: 30%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 
+`
+export const Column2 = styled.div`
+    flex: 33%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+`
+export const Column3 = styled.div`
+    flex: 30%;
+    // margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 `
 export const NavLogo = styled(LinkR)`
 color: #fff;
@@ -37,7 +54,7 @@ cursor: pointer;
 font-size: 1.5rem;
 display: flex;
 align-items: center;
-margin-left: 24px;
+// margin-left: 24px;
 font-weight: bold;
 text-decoration: none;
 
@@ -87,8 +104,8 @@ export const NavLinks = styled(LinkScroll)`
 
 export const NavInfo = styled.nav`
     display: flex; 
-    align-items: center;
-    jusify-content: flex-end;
+    // align-items: center;
+    // jusify-content: flex-end;
 
     @media screen and (max-width: 768px){
         display: none;
@@ -101,7 +118,18 @@ export const NavCart = styled(LinkR)`
     border: none;
     cursor: pointer;
     text-decoration: none;
-    padding: 10px 22px;
+    padding: 0px 22px;
+
+    &:hover{
+}
+`
+export const NavWishlist = styled(LinkR)`
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
 
 
     &:hover{
@@ -126,7 +154,6 @@ export const NavBtnLinkSignUp = styled(LinkR)`
     background: transparent;
 
     white-space: nowrap;
-    padding: 10px 22px;
     font-size: 19px;
     font-weight: bold;
 
@@ -139,4 +166,15 @@ export const NavBtnLinkSignUp = styled(LinkR)`
     &:hover{
     transition: all 0.2s ease-in-out;
     color: #EA99D5;
+`
+export const Icon = styled.div`
+    color: #fff;
+    font-size: 1.4rem;
+    padding-top: 7px;
+    
+`
+export const Text = styled.h4`
+    font-weight: normal;
+    font-size: 14px;
+
 `
