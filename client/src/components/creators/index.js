@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import Video from '../../videos/space.mp4'
-import Image from '../../images/creators/1.jpg'
 import GlassCardsPage from './glass-card'
 
 

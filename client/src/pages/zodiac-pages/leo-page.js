@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Navbar from '../../components/navbar'
 import Sidebar from '../../components/sidebar'
-import HoroscopeLeo from '../../components/horoscope-pages/horoscope_leo'
+import HoroscopeLeo from '../../components/horoscope-pages/leo.js'
 
 const AriesPage = () => {
   const [isOpen, setIsOpen] = useState(false)
