@@ -15,13 +15,13 @@ class userController {
             }
 
             const {email, password} = req.body;
-            const candidate = User.findOne(email);
+            const candidate = await User.findOne({ where: { email: email } });
             if (candidate) {
                 return res.status(400).json({message: `User with email ${email} already exist`});
             }
 
             //somehow create salt
-            let salt = 'testing_salt';
+            let salt = 10;
             let hashPassword = await bcrypt.hash(password, salt);
             User.create({
                 email: email,
