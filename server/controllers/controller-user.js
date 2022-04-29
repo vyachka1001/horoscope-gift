@@ -4,20 +4,21 @@ const {check, validationResult} = require ('express-validator');
 const bcrypt = require ('bcryptjs');
 
 class userController {
-    async register (req, res){
+    async register (req, res) {
+        let badRequestCode = 400;
         try {
             let errors = validationResult(req);
             if (!errors.isEmpty()) {
-                return res.status(400).json({
+                return res.status(badRequestCode).json({
                     message: "Incorrect operation",
                     errors
                 });
             }
 
-            const {email, password} = req.body;
+            const {email, password, zodiac_sign, gender} = req.body;
             const candidate = await User.findOne({ where: { email: email } });
             if (candidate) {
-                return res.status(400).json({message: `User with email ${email} already exist`});
+                return res.status(badRequestCode).json({message: `User with email ${email} already exist`});
             }
 
             //somehow create salt
@@ -25,7 +26,9 @@ class userController {
             let hashPassword = await bcrypt.hash(password, salt);
             User.create({
                 email: email,
-                password: hashPassword
+                password: hashPassword,
+                zodiac_sign: zodiac_sign,
+                gender: gender
             });
 
             return res.json({message: "User was created"});
