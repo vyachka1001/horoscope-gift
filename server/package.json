@@ -7,7 +7,7 @@
     "start": "node server.js",
     "server": "nodemon server.js"
   },
-  "author": "Alexey Zaitsev, Viachaslau Viarbitski <BSUIR, POIT, KSIS, 951007>",
+  "author": "Alexey Zaitsev, Viachaslau Viarbitski <BSUIR, ITS, FCSaN, 951007>",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
