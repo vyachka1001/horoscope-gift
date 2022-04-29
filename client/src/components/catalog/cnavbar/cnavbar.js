@@ -1,8 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
-import { Nav, NavbarContainer, NavPageLink, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavInfo, NavCart, NavBtnLinkSignUp} from './cnavbar-elements'
+import { Nav, NavbarContainer, Column1, Column2, Column3, NavWishlist, NavPageLink, Icon, Text, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavInfo, NavCart, NavBtnLinkSignUp} from './cnavbar-elements'
 import {animateScroll as scroll} from 'react-scroll'
 import Dropdown from "../pop-up-categories/index";
+import {IoHeart} from 'react-icons/io5'
+import {IoCartSharp} from 'react-icons/io5'
+import {BsFillArrowLeftCircleFill} from 'react-icons/bs'
+import {TiArrowBack} from 'react-icons/ti'
+import {IoArrowUndoSharp} from 'react-icons/io5'
+
+
 
 const CNavbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
@@ -31,20 +38,39 @@ return (
    <>   
    <Nav scrollNav={scrollNav}>
      <NavbarContainer>
-      <NavLogo to='/' onClick={toggleHome} >horoscope</NavLogo>
-      <MobileIcon onClick={toggle}>
-        <FaBars />
-      </MobileIcon>
-      <NavMenu>
-        <NavItem>
-        <Dropdown selected={selected} setSelected={setSelected} />
+      <Column1>
+        <NavLogo to='/' onClick={toggleHome} >
+            <IoArrowUndoSharp />
+          </NavLogo>
+        <MobileIcon onClick={toggle}>
+          <FaBars />
+        </MobileIcon>
+      </Column1>
+      <Column2>
+        <NavMenu>
+          <NavItem>
+            <Dropdown selected={selected} setSelected={setSelected} />
           {/* <NavPageLink to= '/creators'>Creators</NavPageLink> */}
-        </NavItem> 
-      </NavMenu>    
-      <NavInfo>
-        <NavCart>Your Wishlist</NavCart>
-        <NavCart>Your Cart</NavCart>
-      </NavInfo>
+          </NavItem> 
+        </NavMenu>   
+      </Column2>
+      <Column3>
+        <NavInfo>
+          <NavWishlist>
+            <Icon>
+              <IoHeart/>
+            </Icon>
+            <Text>Your Wishlist</Text>
+          </NavWishlist>
+          <NavCart>
+            <Icon>
+              <IoCartSharp/>
+            </Icon>
+            <Text>Your Cart</Text>
+          </NavCart>
+        </NavInfo>
+      </Column3>
+      
      </NavbarContainer>
    </Nav>
    </>

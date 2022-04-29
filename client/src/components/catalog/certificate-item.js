@@ -7,7 +7,7 @@ import './catalog-elements.css'
 import * as BsIcons from 'react-icons/bs'
 import * as IoIoIcons from 'react-icons/io'
 import {Link} from 'react-router-dom'
-
+import {IoCartSharp} from 'react-icons/io5'
 
 export const ItemCard = styled.div`
     display: flex; 
@@ -85,7 +85,7 @@ const CertificateItem = ({certificate}) => {
                             </div>
                             <div className="cart">
                             <Link to='#' className='icon_cart'>
-                                <BsIcons.BsFillCartFill />
+                                <IoCartSharp/>
                                 </Link>   
                             </div>
                         </div>

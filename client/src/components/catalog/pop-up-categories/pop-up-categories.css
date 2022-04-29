@@ -29,21 +29,29 @@
     top: 110%;
     left: 0;
     padding: 10px;
-    background: #fff;
+    background: #000;
     box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
     font-weight: 500;
-    color: #000;
+    color: #fff;
     width: 100%;
     border-radius: 20px;
     text-align: center;
-  }
-  .dropdown .dropdown-content .dropdown-item {
-    padding: 10px;
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-  .dropdown .dropdown-content .dropdown-item:hover {
-    background: #f4f4f4;
+    border: 1px solid #B762C1;
+    
+
     
   }
+  .dropdown .dropdown-content .dropdown-item {
+    padding: 7px;
+    cursor: pointer;
+    transition: all 0.2s;
+    /* border: 1px solid #fff; */
+    /* border-radius: 15px; */
+    margin: 0 0 2px 0;
+  }
+  .dropdown .dropdown-content .dropdown-item:hover {
+    background: #B762C1;
+    border-radius: 10px;
+  }
   
+
