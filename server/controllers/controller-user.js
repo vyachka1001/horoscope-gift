@@ -8,15 +8,7 @@ class userController {
     async register (req, res) {
         let badRequestCode = 400;
         try {
-            /*let errors = validationResult(req);
-            if (!errors.isEmpty()) {
-                return res.status(badRequestCode).json({
-                    message: "Incorrect operation",
-                    errors
-                });
-            }*/
-
-            const { email, password, zodiac_sign, gender } = req.body;
+            const { email, password, zodiacSign, gender } = req.body;
             const user = await User.findOne({ where: { email: email } });
             if (user) {
                 return res.status(badRequestCode).json( { message: `User with email ${email} already exist` } );
@@ -28,7 +20,7 @@ class userController {
             User.create({
                 email: email,
                 password: hashPassword,
-                zodiac_sign: zodiac_sign,
+                zodiac_sign: zodiacSign,
                 gender: gender
             });
 
