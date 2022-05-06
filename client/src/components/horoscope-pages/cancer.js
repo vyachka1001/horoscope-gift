@@ -1,17 +1,11 @@
 import React from 'react'
-import './horoscope_taurus.css'
 import aries from '../../images/zodiac-signs/img-for-pages/stars.svg'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
-import {BsWind} from 'react-icons/bs'
 import {IoHappy} from 'react-icons/io5'
 import {IoWaterSharp} from 'react-icons/io5'
 import {IoIosColorPalette} from 'react-icons/io'
 import {RiHandHeartFill} from 'react-icons/ri'
 import ShowDate from '../date/index'
 import styled from 'styled-components'
-import Feature from '../feature/feature';
-import {BsMusicNoteBeamed} from 'react-icons/bs'
 import {IoBook} from 'react-icons/io5'
 import {ImFire} from 'react-icons/im'
 import Video from '../../videos/space.mp4'
@@ -172,7 +166,7 @@ export const MainBg2 = styled.div`
     overflow: hidden;
 `
 
-export default class HoroscopeTaurus extends  React.Component {
+export default class HoroscopeCancer extends  React.Component {
 
     constructor(props) {
         super(props);
@@ -194,7 +188,7 @@ export default class HoroscopeTaurus extends  React.Component {
         <>
         <Container> 
             <MainBg>
-                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </MainBg>
             <HoroscopeContainer>
               <section id='aries'>
@@ -238,7 +232,7 @@ export default class HoroscopeTaurus extends  React.Component {
         </Container> 
         <SecondContainer>
             <MainBg2>
-                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </MainBg2>
             <InfoSection>
               <ContainerInfo>

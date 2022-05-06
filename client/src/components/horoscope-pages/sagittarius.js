@@ -1,5 +1,4 @@
 import React from 'react'
-import './horoscope_taurus.css'
 import aries from '../../images/zodiac-signs/img-for-pages/stars.svg'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'

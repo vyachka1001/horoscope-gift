@@ -15,7 +15,7 @@ import Icon12 from '../../images/zodiac-signs/pack2/009-pisces.png'
 import {ZodiacContainer, ZodiacH1, ZodiacWrapper, ZodiacCard, ZodiacIcon, ZodiacH2, ZodiacP} from './zodiac_elements'
 
 
-const Zodiac = () => {
+const ZodiacSection = () => {
   return (
     <ZodiacContainer id ="zodiac">
         <ZodiacH1>Choose your zodiac sign</ZodiacH1>
@@ -85,4 +85,4 @@ const Zodiac = () => {
   )
 }
 
-export default Zodiac
+export default ZodiacSection

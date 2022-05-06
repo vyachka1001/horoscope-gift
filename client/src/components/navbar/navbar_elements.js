@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
 import { NEWButton } from '../button_element';
+import { NEWButton2 } from '../button_element';
 
 export const Nav = styled.nav` 
     background: ${({ scrollNav}) => (scrollNav ? '#000' : 'transparent')};
@@ -40,6 +41,7 @@ align-items: center;
 margin-left: 24px;
 font-weight: bold;
 text-decoration: none;
+
 
 `
 export const MobileIcon = styled.div`
@@ -149,7 +151,7 @@ export const NavBtnLinkSignUp = styled(LinkR)`
     color: black;
    
 `
-export const HeroButtonLog = styled(NEWButton)`
+export const HeroButtonLog = styled(NEWButton2)`
 	color: black;
     padding: ${({ big }) => (big ? '14px 48px' : '10px 22px')};
 	border: 2px solid #B762C1;
@@ -192,3 +194,20 @@ export const HeroButtonSign = styled(NEWButton)`
 		color: black;
 	}
 `;
+export const LogoIcon = styled.div`
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-right: 5px;
+`
+export const LogoContainer = styled(LinkR)`
+color: #fff;
+justify-self: flex-start;
+cursor: pointer; 
+font-size: 1.5rem;
+display: flex;
+align-items: center;
+margin-left: 24px;
+font-weight: bold;
+text-decoration: none;
+`

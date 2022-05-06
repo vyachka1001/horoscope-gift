@@ -20,7 +20,7 @@ const MainSection = () => {
           Find out by the stars what kind of rest you need
         </MainP>
         <MainBtnWrapper>
-          <NEWButton to='' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' >
+          <NEWButton to= 'zodiac' smooth={true} duration={1500} spy={true} exact='true' offset={-80} onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true' >
             Get started {hover ? <ArrowForward /> : <ArrowRight />}
           </NEWButton>  
         </MainBtnWrapper>

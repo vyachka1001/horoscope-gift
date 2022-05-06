@@ -1,10 +1,6 @@
 import React from 'react'
-import './horoscope_taurus.css'
 import aries from '../../images/zodiac-signs/img-for-pages/stars.svg'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
 import {BsWind} from 'react-icons/bs'
-import {GiHighGrass} from 'react-icons/gi'
 import {IoRose} from 'react-icons/io5'
 import {IoIosColorPalette} from 'react-icons/io'
 import {RiHandHeartFill} from 'react-icons/ri'
@@ -194,7 +190,7 @@ export default class HoroscopeGemini extends  React.Component {
         <>
         <Container> 
             <MainBg>
-                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </MainBg>
             <HoroscopeContainer>
               <section id='aries'>
@@ -238,7 +234,7 @@ export default class HoroscopeGemini extends  React.Component {
         </Container> 
         <SecondContainer>
             <MainBg2>
-                {/* <VideoBg autoPlay loop muted src={Video} type='video/mp4' /> */}
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </MainBg2>
             <InfoSection>
               <ContainerInfo>

@@ -81,7 +81,7 @@ const CertificateItem = ({certificate}) => {
                         <p className="date_">{certificate.name}</p>
                         <div className="action">
                             <div className="priceGroup">
-                                <p className="price newPrice">{certificate.price}$</p>
+                                <p className="price newPrice">{certificate.price} р.</p>
                             </div>
                             <div className="cart">
                             <Link to='#' className='icon_cart'>

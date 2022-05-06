@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa'
-import { Nav, NavbarContainer, HeroButtonLog, HeroButtonSign,  NavPageLink, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavBtn, NavBtnLink, NavBtnLinkSignUp} from './navbar_elements'
+import { Nav, NavbarContainer, HeroButtonLog, HeroButtonSign,  LogoContainer, LogoIcon, NavPageLink, NavLogo, NavMenu, MobileIcon, NavItem, NavLinks, NavBtn, NavBtnLink, NavBtnLinkSignUp} from './navbar_elements'
 import {animateScroll as scroll} from 'react-scroll'
 import {NEWButton} from '../button_element'
+import {GiStarSattelites} from 'react-icons/gi'
 
 const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false)
@@ -27,8 +28,14 @@ const Navbar = ({ toggle }) => {
 return (
    <>   
    <Nav scrollNav={scrollNav}>
-     <NavbarContainer>
-      <NavLogo to='/' onClick={toggleHome} >horoscope</NavLogo>
+     <NavbarContainer> 
+      <LogoContainer to='/' onClick={toggleHome}>
+        <NavLogo>
+        <LogoIcon><GiStarSattelites /></LogoIcon>
+          horoscope
+        </NavLogo>
+
+      </LogoContainer>
       <MobileIcon onClick={toggle}>
         <FaBars />
       </MobileIcon>
