@@ -5,6 +5,8 @@ const User = sequelize.define('user',{
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true},
     email: {type: DataTypes.STRING, primaryKey: true, unique: true},
     password: {type: DataTypes.STRING},
+    zodiac_sign: {type: DataTypes.STRING},
+    gender: {type: DataTypes.STRING},
     role: {type: DataTypes.STRING, defaultValue: "USER"}
 })
 

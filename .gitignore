@@ -1,13 +1,15 @@
+/server/.env
+/client/.env
+
 # Ignore the node_modules directory
 /client/node_modules/
 /server/node_modules/
 /.pnp
 .pnp.js
 
-
-
 # testing
-/coverage
+/coverage/server/.env
+/client/.env
 
 # production
 /build
