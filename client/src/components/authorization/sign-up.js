@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import {Container, MainBg, VideoBg, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormButton, FormInput} from './authorization_elements'
+import {Container, MainBg, VideoBg, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormButton} from './authorization_elements'
 import Video from '../../videos/space.mp4'
 import Input from './utils/Input'
-import { register } from '../../actions/user_registration'
+import { register } from '../../actions/user_actions'
 
 
 const SignUp = () => {
@@ -30,7 +30,7 @@ const SignUp = () => {
                     <Input required value={email} setValue={setEmail} type='email' />
                     <FormLabel htmlFor='for'>Password</FormLabel>
                     <Input value={password} setValue={setPassword} type='password' required/>
-                    <FormButton type='submit' onClick={() => register(email, password, gender, zodiacSign)}>Continue</FormButton>
+                    <FormButton type='submit' onClick={ () => register(email, password, gender, zodiacSign) }>Continue</FormButton>
                 </Form>
             </FormContent>
         </FormWrap>
