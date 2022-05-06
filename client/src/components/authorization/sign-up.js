@@ -1,9 +1,16 @@
-import React from 'react'
-import {Container, MainBg, VideoBg, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormInput, FormButton, Text} from './authorization_elements'
+import React, { useState } from 'react'
+import {Container, MainBg, VideoBg, FormWrap, Icon, FormContent, Form, FormH1, FormLabel, FormButton} from './authorization_elements'
 import Video from '../../videos/space.mp4'
+import Input from './utils/Input'
+import { register } from '../../actions/user_actions'
 
 
 const SignUp = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [zodiacSign, setZodiacSign] = useState("");
+  const [gender, setGender] = useState("");
+
   return (
     <>
     <Container>
@@ -13,18 +20,17 @@ const SignUp = () => {
         <FormWrap>
             <Icon to="/">horoscope</Icon>
             <FormContent> 
-                <Form action="#">
+                <Form action="/login">
                     <FormH1>Sign up ;)</FormH1>
                     <FormLabel htmlFor='for'>Zodiac sign</FormLabel>
-                    <FormInput type='zodiac-sign' required />
+                    <Input required value={zodiacSign} setValue={setZodiacSign} type='zodiac' />
                     <FormLabel htmlFor='for'>Gender</FormLabel>
-                    <FormInput type='Gender' required />
+                    <Input required value={gender} setValue={setGender} type='Gender' />
                     <FormLabel htmlFor='for'>Email</FormLabel>
-                    <FormInput type='email' required/>
+                    <Input required value={email} setValue={setEmail} type='email' />
                     <FormLabel htmlFor='for'>Password</FormLabel>
-                    <FormInput type='password' required />
-                    <FormButton type='submit'>Continue</FormButton>
-                    <Text>Forgot password ?</Text>
+                    <Input value={password} setValue={setPassword} type='password' required/>
+                    <FormButton type='submit' onClick={ () => register(email, password, gender, zodiacSign) }>Continue</FormButton>
                 </Form>
             </FormContent>
         </FormWrap>
