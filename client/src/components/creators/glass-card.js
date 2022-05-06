@@ -150,7 +150,6 @@ const GlassCardsPage = () => {
 
                 </Icon3>
             </IconContainer>
-            {/* <CardH3>Zodiac Sign: scorpio</CardH3> */}
         </GlassCard>
     </Container>
   )

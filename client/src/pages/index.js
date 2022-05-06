@@ -2,8 +2,8 @@ import React, {useState} from 'react'
 import MainSection from '../components/main-section'
 import Navbar from '../components/navbar'
 import Sidebar from '../components/sidebar'
-import Zodiac from '../components/zodiac-section'
-
+import ZodiacSection from '../components/zodiac-section'
+import Footer from '../components/footer/footer'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -13,10 +13,11 @@ const Home = () => {
   
   return (
     <>
-        <Sidebar isOpen={isOpen} toggle={toggle} />
+        {/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
         <Navbar toggle={toggle} />    
         <MainSection />
-        <Zodiac />
+        <ZodiacSection />
+        <Footer />
     </>
   )
 }
